@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rares Mos — Software Developer at Amazon. Portfolio showcasing web applications, tools, and internal projects.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';">
+    <title>Rares Mos | Portfolio</title>
+
+    <!-- Google Fonts: Inter with font-display swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Critical above-fold CSS inlined for FCP optimization -->
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+        [data-theme="dark"]{--bg-primary:#0f0f0f;--text-primary:#f5f5f5}
+        [data-theme="light"]{--bg-primary:#fafafa;--text-primary:#1a1a1a}
+        body{background-color:var(--bg-primary);color:var(--text-primary)}
+    </style>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#hero" class="nav__logo" aria-label="Home — Rares Mos">RM</a>
+            <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav__hamburger-line"></span>
+                <span class="nav__hamburger-line"></span>
+                <span class="nav__hamburger-line"></span>
+            </button>
+            <ul class="nav__links" id="nav-menu" role="list">
+                <li><a href="#hero" class="nav__link nav__link--active">Home</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+            </ul>
+            <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+                <svg class="theme-toggle__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero" data-animate>
+            <div class="hero__content">
+                <h1 class="hero__title" id="hero-name">Rares Mos</h1>
+                <p class="hero__subtitle" id="hero-title">Software Developer</p>
+                <p class="hero__company" id="hero-company">Amazon &bull; Spain</p>
+                <p class="hero__bio" id="hero-bio">Building scalable web applications and internal tools. Passionate about clean architecture, data-driven solutions, and shipping products that make a difference.</p>
+                <div class="hero__social" id="hero-social">
+                    <a href="https://github.com/lensordr" class="hero__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" data-animate>
+            <h2 class="projects__heading">Projects</h2>
+            <div class="projects__filters" role="group" aria-label="Filter projects by category">
+                <button class="filter-btn filter-btn--active" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+                <button class="filter-btn" data-filter="tool" aria-pressed="false">Tool</button>
+                <button class="filter-btn" data-filter="pwa" aria-pressed="false">PWA</button>
+                <button class="filter-btn" data-filter="internal" aria-pressed="false">Internal</button>
+            </div>
+            <div id="projects-grid" class="projects__grid" aria-live="polite"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" data-animate>
+            <h2 class="about__heading">About Me</h2>
+            <div class="about__content">
+                <p class="about__text">
+                    Software Developer at Amazon Spain, focused on building internal tools and full-stack web applications that solve real problems. I work across the entire stack — from Python backends with FastAPI and Django to modern frontends with Next.js and TypeScript.
+                </p>
+                <p class="about__text">
+                    Outside of work, I build and ship personal projects ranging from restaurant management systems to AI-powered PWAs. I enjoy clean architecture, data-driven design, and turning ideas into deployed products.
+                </p>
+                <div class="about__skills">
+                    <h3 class="about__skills-heading">Technologies</h3>
+                    <ul class="about__skills-list" role="list">
+                        <li class="about__skill">Python</li>
+                        <li class="about__skill">TypeScript</li>
+                        <li class="about__skill">FastAPI</li>
+                        <li class="about__skill">Django</li>
+                        <li class="about__skill">Next.js</li>
+                        <li class="about__skill">PostgreSQL</li>
+                        <li class="about__skill">AWS</li>
+                        <li class="about__skill">Node.js</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; <span id="footer-year">2025</span> Rares Mos. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal__content">
+            <button class="modal__close" data-close aria-label="Close modal">&times;</button>
+            <h3 id="modal-title" class="modal__title"></h3>
+            <div class="modal__body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts: data.js loaded before app.js -->
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>
