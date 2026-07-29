@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rares Mos — Software Developer at Amazon. Portfolio showcasing web applications, tools, and internal projects.">
+    <meta name="description" content="Rares Mos — Software Developer at Amazon Spain. Portfolio showcasing full-stack web applications, analytics platforms, and internal tools.">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self';">
-    <title>Rares Mos | Portfolio</title>
+    <title>Rares Mos | Software Developer</title>
 
-    <!-- Google Fonts: Inter with font-display swap -->
+    <!-- Google Fonts: Inter + JetBrains Mono for code feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Critical above-fold CSS inlined for FCP optimization -->
     <style>
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         html{scroll-behavior:smooth}
         body{font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
-        [data-theme="dark"]{--bg-primary:#0f0f0f;--text-primary:#f5f5f5}
-        [data-theme="light"]{--bg-primary:#fafafa;--text-primary:#1a1a1a}
+        [data-theme="dark"]{--bg-primary:#0a0a0b;--text-primary:#f0f0f5}
+        [data-theme="light"]{--bg-primary:#fafbfc;--text-primary:#1a1a2e}
         body{background-color:var(--bg-primary);color:var(--text-primary)}
     </style>
 
@@ -28,7 +28,10 @@
     <!-- Navigation -->
     <header class="site-header">
         <nav class="nav" aria-label="Main navigation">
-            <a href="#hero" class="nav__logo" aria-label="Home — Rares Mos">RM</a>
+            <a href="#hero" class="nav__logo" aria-label="Home — Rares Mos">
+                <span class="nav__logo-text">RM</span>
+                <span class="nav__logo-dot"></span>
+            </a>
             <button class="nav__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
                 <span class="nav__hamburger-line"></span>
                 <span class="nav__hamburger-line"></span>
@@ -40,7 +43,7 @@
                 <li><a href="#about" class="nav__link">About</a></li>
             </ul>
             <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
-                <svg class="theme-toggle__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <svg class="theme-toggle__icon theme-toggle__sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <circle cx="12" cy="12" r="5"></circle>
                     <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
                 </svg>
@@ -51,16 +54,60 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero" data-animate>
+            <!-- Animated background elements -->
+            <div class="hero__bg-elements" aria-hidden="true">
+                <div class="hero__float hero__float--1">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" rx="8" stroke="currentColor" stroke-width="1" opacity="0.15"/><rect x="12" y="15" width="25" height="3" rx="1.5" fill="currentColor" opacity="0.1"/><rect x="12" y="22" width="35" height="3" rx="1.5" fill="currentColor" opacity="0.08"/><rect x="12" y="29" width="20" height="3" rx="1.5" fill="currentColor" opacity="0.1"/><rect x="12" y="38" width="30" height="12" rx="3" fill="currentColor" opacity="0.05"/></svg>
+                </div>
+                <div class="hero__float hero__float--2">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="1" opacity="0.12"/><path d="M15 30 L20 25 L25 28 L30 18 L35 22" stroke="currentColor" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="hero__float hero__float--3">
+                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none"><rect x="5" y="30" width="6" height="10" rx="2" fill="currentColor" opacity="0.1"/><rect x="14" y="22" width="6" height="18" rx="2" fill="currentColor" opacity="0.12"/><rect x="23" y="15" width="6" height="25" rx="2" fill="currentColor" opacity="0.15"/><rect x="32" y="8" width="6" height="32" rx="2" fill="currentColor" opacity="0.1"/></svg>
+                </div>
+                <div class="hero__float hero__float--4">
+                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none"><path d="M10 40 Q20 10, 45 15" stroke="currentColor" stroke-width="1.5" opacity="0.12" fill="none" stroke-linecap="round"/><circle cx="45" cy="15" r="3" fill="currentColor" opacity="0.15"/><circle cx="10" cy="40" r="2" fill="currentColor" opacity="0.1"/></svg>
+                </div>
+                <div class="hero__float hero__float--5">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><polygon points="20,5 35,35 5,35" stroke="currentColor" stroke-width="1" opacity="0.08" fill="none"/><circle cx="20" cy="25" r="5" stroke="currentColor" stroke-width="1" opacity="0.1"/></svg>
+                </div>
+                <!-- Grid dots background -->
+                <div class="hero__grid-dots"></div>
+            </div>
+
             <div class="hero__content">
-                <h1 class="hero__title" id="hero-name">Rares Mos</h1>
-                <p class="hero__subtitle" id="hero-title">Software Developer</p>
-                <p class="hero__company" id="hero-company">Amazon &bull; Spain</p>
-                <p class="hero__bio" id="hero-bio">Building scalable web applications and internal tools. Passionate about clean architecture, data-driven solutions, and shipping products that make a difference.</p>
-                <div class="hero__social" id="hero-social">
-                    <a href="https://github.com/lensordr" class="hero__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    Available for freelance
+                </div>
+                <h1 class="hero__title" id="hero-name">
+                    <span class="hero__title-line">I build things</span>
+                    <span class="hero__title-line hero__title-line--gradient">that work.</span>
+                </h1>
+                <p class="hero__subtitle" id="hero-title">Software Developer at <strong>Amazon</strong> · Spain</p>
+                <p class="hero__bio" id="hero-bio">From enterprise analytics platforms with 20+ tabs to production appointment systems handling real bookings daily — I ship full-stack applications that solve real problems.</p>
+                
+                <!-- Stats row -->
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">12+</span>
+                        <span class="hero__stat-label">Projects</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">5+</span>
+                        <span class="hero__stat-label">In Production</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">20+</span>
+                        <span class="hero__stat-label">Technologies</span>
+                    </div>
+                </div>
+
+                <div class="hero__actions">
+                    <a href="#projects" class="hero__cta hero__cta--primary">View Projects</a>
+                    <a href="https://github.com/lensordr" class="hero__cta hero__cta--secondary" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
                     </a>
                 </div>
             </div>
@@ -68,11 +115,14 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects" data-animate>
-            <h2 class="projects__heading">Projects</h2>
+            <div class="section-header">
+                <span class="section-header__tag">Portfolio</span>
+                <h2 class="projects__heading">Featured Work</h2>
+                <p class="section-header__desc">A mix of production apps, SaaS platforms, and internal tools — built with Python, TypeScript, React, and AWS.</p>
+            </div>
             <div class="projects__filters" role="group" aria-label="Filter projects by category">
                 <button class="filter-btn filter-btn--active" data-filter="all" aria-pressed="true">All</button>
-                <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
-                <button class="filter-btn" data-filter="tool" aria-pressed="false">Tool</button>
+                <button class="filter-btn" data-filter="web" aria-pressed="false">Web Apps</button>
                 <button class="filter-btn" data-filter="pwa" aria-pressed="false">PWA</button>
                 <button class="filter-btn" data-filter="internal" aria-pressed="false">Internal</button>
             </div>
@@ -81,26 +131,50 @@
 
         <!-- About Section -->
         <section id="about" class="about" data-animate>
-            <h2 class="about__heading">About Me</h2>
+            <div class="section-header">
+                <span class="section-header__tag">About</span>
+                <h2 class="about__heading">Who I Am</h2>
+            </div>
             <div class="about__content">
-                <p class="about__text">
-                    Software Developer at Amazon Spain, focused on building internal tools and full-stack web applications that solve real problems. I work across the entire stack — from Python backends with FastAPI and Django to modern frontends with Next.js and TypeScript.
-                </p>
-                <p class="about__text">
-                    Outside of work, I build and ship personal projects ranging from restaurant management systems to AI-powered PWAs. I enjoy clean architecture, data-driven design, and turning ideas into deployed products.
-                </p>
+                <div class="about__text-block">
+                    <p class="about__text">
+                        Software Developer at <strong>Amazon Spain</strong>, focused on building internal tools and full-stack web applications that solve real operational problems at scale. I work across the entire stack — from Python backends with FastAPI and Django to modern frontends with Next.js and TypeScript.
+                    </p>
+                    <p class="about__text">
+                        Outside of work, I build and ship production-grade personal projects — from restaurant management systems handling real orders to motorcycle community platforms with paid subscriptions. I enjoy clean architecture, data-driven design, and turning ideas into deployed products.
+                    </p>
+                </div>
                 <div class="about__skills">
-                    <h3 class="about__skills-heading">Technologies</h3>
-                    <ul class="about__skills-list" role="list">
-                        <li class="about__skill">Python</li>
-                        <li class="about__skill">TypeScript</li>
-                        <li class="about__skill">FastAPI</li>
-                        <li class="about__skill">Django</li>
-                        <li class="about__skill">Next.js</li>
-                        <li class="about__skill">PostgreSQL</li>
-                        <li class="about__skill">AWS</li>
-                        <li class="about__skill">Node.js</li>
-                    </ul>
+                    <h3 class="about__skills-heading">Tech Stack</h3>
+                    <div class="about__skills-grid">
+                        <div class="about__skill-category">
+                            <span class="about__skill-category-label">Backend</span>
+                            <ul class="about__skills-list" role="list">
+                                <li class="about__skill">Python</li>
+                                <li class="about__skill">Django</li>
+                                <li class="about__skill">FastAPI</li>
+                                <li class="about__skill">Node.js</li>
+                            </ul>
+                        </div>
+                        <div class="about__skill-category">
+                            <span class="about__skill-category-label">Frontend</span>
+                            <ul class="about__skills-list" role="list">
+                                <li class="about__skill">TypeScript</li>
+                                <li class="about__skill">React</li>
+                                <li class="about__skill">Next.js</li>
+                                <li class="about__skill">Tailwind</li>
+                            </ul>
+                        </div>
+                        <div class="about__skill-category">
+                            <span class="about__skill-category-label">Cloud & Data</span>
+                            <ul class="about__skills-list" role="list">
+                                <li class="about__skill">AWS</li>
+                                <li class="about__skill">PostgreSQL</li>
+                                <li class="about__skill">DynamoDB</li>
+                                <li class="about__skill">S3</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -108,7 +182,12 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <p class="site-footer__text">&copy; <span id="footer-year">2025</span> Rares Mos. All rights reserved.</p>
+        <div class="site-footer__content">
+            <p class="site-footer__text">&copy; <span id="footer-year">2025</span> Rares Mos</p>
+            <div class="site-footer__links">
+                <a href="https://github.com/lensordr" target="_blank" rel="noopener noreferrer" class="site-footer__link">GitHub</a>
+            </div>
+        </div>
     </footer>
 
     <!-- Modal Overlay -->
