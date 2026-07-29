@@ -10,6 +10,98 @@ const VALID_CATEGORIES = ['web', 'tool', 'pwa', 'internal'];
 // Project data array
 const projects = [
   {
+    id: 'datalens',
+    title: 'DataLens',
+    subtitle: 'Enterprise Analytics & Intelligence Platform',
+    description: 'Full-stack enterprise analytics platform built from scratch to centralize operational data, automate reporting workflows, and surface actionable insights through AI. Features 20+ specialized tabs covering everything from real-time KPI dashboards and anomaly detection to forecasting, what-if simulations, and natural language data querying. Handles multi-source data ingestion, role-based access control, and automated email reporting to stakeholders.',
+    features: [
+      'Multi-tab analytics dashboard (20+ specialized views)',
+      'AI-powered data assistant with natural language querying',
+      'Executive summary auto-generation via AI',
+      'Real-time KPI tracking with configurable alerts',
+      'Forecasting and time-series analysis',
+      'What-if scenario simulations',
+      'Anomaly detection and clustering',
+      'Automated scheduled email reports (HTML formatted)',
+      'Contact management with bulk operations',
+      'Role-based permissions (admin/user/viewer)',
+      'Custom SQL query builder with sanitization',
+      'Data connectors for multiple sources',
+      'Advanced analytics: cohort analysis, RFM segmentation, feature importance',
+      'Benchmark tracking and comparison',
+      'Checklist and audit workflows',
+      'Top offenders identification and tracking'
+    ],
+    techStack: {
+      backend: ['Django', 'DRF', 'Python'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      database: ['DynamoDB', 'S3', 'SQLite'],
+      deployment: ['AWS Bedrock', 'AWS SES', 'AWS Lambda']
+    },
+    languages: {},
+    category: 'internal',
+    isPrivate: true,
+    repoUrl: null,
+    liveUrl: null,
+    image: null,
+    restrictedLabel: 'Internal Tool — Amazon'
+  },
+  {
+    id: 'minore-barbershop',
+    title: 'Minore Barbershop',
+    subtitle: 'Appointment Booking System',
+    description: 'Production appointment booking system for a real barbershop. Features same-day scheduling, email confirmations, revenue tracking, and admin dashboard. Deployed and actively used.',
+    features: [
+      'QR code access for booking',
+      'Same-day appointment scheduling',
+      'Email confirmations with cancellation links',
+      'Real-time revenue tracking per barber',
+      'Client accounts',
+      'CI/CD with GitHub Actions',
+      'Sentry error monitoring'
+    ],
+    techStack: {
+      backend: ['FastAPI', 'SQLAlchemy'],
+      frontend: ['HTML', 'CSS', 'JavaScript'],
+      database: ['PostgreSQL'],
+      deployment: ['Render', 'GitHub Actions', 'Sentry']
+    },
+    languages: { Python: 55, HTML: 32, CSS: 11, JavaScript: 2 },
+    category: 'web',
+    isPrivate: false,
+    repoUrl: 'https://github.com/lensordr/minore-barbershop',
+    liveUrl: null,
+    image: null,
+    restrictedLabel: null
+  },
+  {
+    id: 'affinity-demo',
+    title: 'RelIQ',
+    subtitle: 'Relationship Intelligence CRM',
+    description: "Working demo of Affinity-style relationship intelligence CRM. Computes relationship strength from communication history using frequency + recency-decay, finds warmest introduction paths via Dijkstra's algorithm. Live GitHub Pages demo available.",
+    features: [
+      'Relationship strength scoring (0-100)',
+      'Cooling relationship detection',
+      "Warmest path via Dijkstra's algorithm",
+      'Mock email/meeting sync',
+      'Static GitHub Pages version with TypeScript engine',
+      'No LLM dependency — deterministic math'
+    ],
+    techStack: {
+      backend: ['FastAPI', 'SQLAlchemy'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      database: ['SQLite'],
+      deployment: ['GitHub Pages']
+    },
+    languages: { TypeScript: 81, Python: 19 },
+    category: 'web',
+    isPrivate: false,
+    repoUrl: 'https://github.com/lensordr/affinity_demo',
+    liveUrl: 'https://lensordr.github.io/affinity_demo/',
+    image: null,
+    restrictedLabel: null
+  },
+  {
     id: 'tablelink',
     title: 'TableLink',
     subtitle: 'Restaurant Management System',
@@ -63,30 +155,30 @@ const projects = [
     restrictedLabel: null
   },
   {
-    id: 'minore-barbershop',
-    title: 'Minore Barbershop',
-    subtitle: 'Appointment Booking System',
-    description: 'Production appointment booking system for a real barbershop. Features same-day scheduling, email confirmations, revenue tracking, and admin dashboard. Deployed and actively used.',
+    id: 'moslaries',
+    title: 'Moslaries',
+    subtitle: 'AI Calorie & Macro Tracker PWA',
+    description: 'Personal AI-assisted calorie and macro tracker PWA. Calculates BMR/TDEE using Mifflin-St Jeor formula, AI meal parsing via Groq API, all data stored locally in IndexedDB. Privacy-first — no server, no uploads.',
     features: [
-      'QR code access for booking',
-      'Same-day appointment scheduling',
-      'Email confirmations with cancellation links',
-      'Real-time revenue tracking per barber',
-      'Client accounts',
-      'CI/CD with GitHub Actions',
-      'Sentry error monitoring'
+      'BMR/TDEE calculation (Mifflin-St Jeor)',
+      'AI meal parsing via Groq API',
+      'Coach chat assistant',
+      'Weight trend tracking',
+      'IndexedDB local storage',
+      'Offline-capable PWA',
+      'JSON data export/import'
     ],
     techStack: {
-      backend: ['FastAPI', 'SQLAlchemy'],
-      frontend: ['HTML', 'CSS', 'JavaScript'],
-      database: ['PostgreSQL'],
-      deployment: ['Render', 'GitHub Actions', 'Sentry']
+      backend: [],
+      frontend: ['JavaScript', 'Vite', 'Tailwind CSS'],
+      database: ['IndexedDB'],
+      deployment: ['GitHub Pages']
     },
-    languages: { Python: 55, HTML: 32, CSS: 11, JavaScript: 2 },
-    category: 'web',
+    languages: { JavaScript: 98, HTML: 1, CSS: 1 },
+    category: 'pwa',
     isPrivate: false,
-    repoUrl: 'https://github.com/lensordr/minore-barbershop',
-    liveUrl: null,
+    repoUrl: 'https://github.com/lensordr/moslaries',
+    liveUrl: 'https://lensordr.github.io/moslaries/',
     image: null,
     restrictedLabel: null
   },
@@ -168,85 +260,6 @@ const projects = [
     liveUrl: null,
     image: null,
     restrictedLabel: null
-  },
-  {
-    id: 'affinity-demo',
-    title: 'RelIQ',
-    subtitle: 'Relationship Intelligence CRM',
-    description: "Working demo of Affinity-style relationship intelligence CRM. Computes relationship strength from communication history using frequency + recency-decay, finds warmest introduction paths via Dijkstra's algorithm. Live GitHub Pages demo available.",
-    features: [
-      'Relationship strength scoring (0-100)',
-      'Cooling relationship detection',
-      "Warmest path via Dijkstra's algorithm",
-      'Mock email/meeting sync',
-      'Static GitHub Pages version with TypeScript engine',
-      'No LLM dependency — deterministic math'
-    ],
-    techStack: {
-      backend: ['FastAPI', 'SQLAlchemy'],
-      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      database: ['SQLite'],
-      deployment: ['GitHub Pages']
-    },
-    languages: { TypeScript: 81, Python: 19 },
-    category: 'web',
-    isPrivate: false,
-    repoUrl: 'https://github.com/lensordr/affinity_demo',
-    liveUrl: 'https://lensordr.github.io/affinity_demo/',
-    image: null,
-    restrictedLabel: null
-  },
-  {
-    id: 'moslaries',
-    title: 'Moslaries',
-    subtitle: 'AI Calorie & Macro Tracker PWA',
-    description: 'Personal AI-assisted calorie and macro tracker PWA. Calculates BMR/TDEE using Mifflin-St Jeor formula, AI meal parsing via Groq API, all data stored locally in IndexedDB. Privacy-first — no server, no uploads.',
-    features: [
-      'BMR/TDEE calculation (Mifflin-St Jeor)',
-      'AI meal parsing via Groq API',
-      'Coach chat assistant',
-      'Weight trend tracking',
-      'IndexedDB local storage',
-      'Offline-capable PWA',
-      'JSON data export/import'
-    ],
-    techStack: {
-      backend: [],
-      frontend: ['JavaScript', 'Vite', 'Tailwind CSS'],
-      database: ['IndexedDB'],
-      deployment: ['GitHub Pages']
-    },
-    languages: { JavaScript: 98, HTML: 1, CSS: 1 },
-    category: 'pwa',
-    isPrivate: false,
-    repoUrl: 'https://github.com/lensordr/moslaries',
-    liveUrl: 'https://lensordr.github.io/moslaries/',
-    image: null,
-    restrictedLabel: null
-  },
-  {
-    id: 'datalens',
-    title: 'DataLens',
-    subtitle: 'Internal Analytics Platform',
-    description: 'Full-stack analytics platform for internal data visualization, automated reporting, and AI-powered insights.',
-    features: [
-      'Analytics dashboards',
-      'Automated reporting',
-      'AI-powered insights'
-    ],
-    techStack: {
-      backend: ['Django', 'DRF'],
-      frontend: ['Next.js', 'TypeScript', 'Tailwind'],
-      database: ['DynamoDB', 'S3'],
-      deployment: ['AWS Bedrock', 'AWS SES']
-    },
-    languages: {},
-    category: 'internal',
-    isPrivate: true,
-    repoUrl: null,
-    liveUrl: null,
-    image: null,
-    restrictedLabel: 'Internal Tool — Amazon'
   },
   {
     id: 'foc-report-tool',
