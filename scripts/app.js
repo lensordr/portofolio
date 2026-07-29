@@ -133,6 +133,7 @@ const ProjectRenderer = (() => {
         card.className = 'project-card';
         card.setAttribute('data-id', project.id);
         card.setAttribute('data-category', project.category);
+        card.setAttribute('data-animate', '');
 
         // Accessibility attributes (Requirement 2.5)
         card.setAttribute('role', 'button');
