@@ -115,7 +115,7 @@ const projects = [
       "Warmest path via Dijkstra's algorithm",
       'Mock email/meeting sync',
       'Static GitHub Pages version with TypeScript engine',
-      'No LLM dependency — deterministic math'
+      'No LLM dependency, deterministic math'
     ],
     techStack: {
       backend: ['FastAPI', 'SQLAlchemy'],
@@ -188,7 +188,7 @@ const projects = [
     id: 'moslaries',
     title: 'Moslaries',
     subtitle: 'AI Calorie & Macro Tracker PWA',
-    description: 'Personal AI-assisted calorie and macro tracker PWA. Calculates BMR/TDEE using Mifflin-St Jeor formula, AI meal parsing via Groq API, all data stored locally in IndexedDB. Privacy-first — no server, no uploads.',
+    description: 'Personal AI-assisted calorie and macro tracker PWA. Calculates BMR/TDEE using Mifflin-St Jeor formula, AI meal parsing via Groq API, all data stored locally in IndexedDB. Privacy first: no server, no uploads.',
     features: [
       'BMR/TDEE calculation (Mifflin-St Jeor)',
       'AI meal parsing via Groq API',
@@ -344,10 +344,10 @@ const projects = [
 // Owner configuration
 const owner = {
   name: 'Rares Mos',
-  title: 'Software Developer',
+  title: 'Business Intelligence Engineer',
   company: 'Amazon',
   location: 'Spain',
-  bio: 'Software developer at Amazon Spain, building internal tools and full-stack web applications. Passionate about creating efficient solutions — from restaurant management systems and booking platforms to analytics dashboards and automation tools.',
+  bio: 'Business Intelligence Engineer at Amazon Spain. Entrepreneur turned developer. Building analytics platforms, internal tools, and full stack web applications that solve real operational problems.',
   social: {
     github: 'https://github.com/lensordr',
     linkedin: null,

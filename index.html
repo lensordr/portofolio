@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rares Mos — Software Developer at Amazon Spain. Portfolio showcasing full-stack web applications, analytics platforms, and internal tools.">
+    <meta name="description" content="Rares Mos — Business Intelligence Engineer at Amazon Spain. Portfolio showcasing full-stack web applications, analytics platforms, and internal tools.">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self';">
-    <title>Rares Mos | Software Developer</title>
+    <title>Rares Mos | Business Intelligence Engineer</title>
 
     <!-- Google Fonts: Inter + JetBrains Mono for code feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,25 +51,149 @@
         </nav>
     </header>
 
+    <!-- Animated background elements — site-wide -->
+    <div class="floating-bg" aria-hidden="true">
+        <!-- Analytics chart -->
+        <div class="floating-el floating-el--1">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none"><rect x="10" y="10" width="100" height="100" rx="14" stroke="currentColor" stroke-width="1.5" opacity="0.2"/><rect x="22" y="70" width="12" height="30" rx="4" fill="currentColor" opacity="0.15"/><rect x="40" y="50" width="12" height="50" rx="4" fill="currentColor" opacity="0.2"/><rect x="58" y="35" width="12" height="65" rx="4" fill="currentColor" opacity="0.25"/><rect x="76" y="55" width="12" height="45" rx="4" fill="currentColor" opacity="0.18"/><rect x="94" y="25" width="12" height="75" rx="4" fill="currentColor" opacity="0.22"/></svg>
+        </div>
+        <!-- Line chart / trend -->
+        <div class="floating-el floating-el--2">
+            <svg width="140" height="90" viewBox="0 0 140 90" fill="none"><path d="M10 70 L30 55 L50 60 L70 30 L90 40 L110 15 L130 25" stroke="currentColor" stroke-width="2" opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 70 L30 55 L50 60 L70 30 L90 40 L110 15 L130 25 L130 85 L10 85 Z" fill="currentColor" opacity="0.04"/><circle cx="70" cy="30" r="4" fill="currentColor" opacity="0.25"/><circle cx="110" cy="15" r="4" fill="currentColor" opacity="0.25"/></svg>
+        </div>
+        <!-- Pie chart -->
+        <div class="floating-el floating-el--3">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="35" stroke="currentColor" stroke-width="1.5" opacity="0.15"/><path d="M50 15 A35 35 0 0 1 83 38 L50 50 Z" fill="currentColor" opacity="0.15"/><path d="M83 38 A35 35 0 0 1 62 83 L50 50 Z" fill="currentColor" opacity="0.1"/><path d="M62 83 A35 35 0 0 1 15 50 L50 50 Z" fill="currentColor" opacity="0.08"/></svg>
+        </div>
+        <!-- Code brackets -->
+        <div class="floating-el floating-el--4">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none"><text x="10" y="35" font-family="JetBrains Mono, monospace" font-size="14" fill="currentColor" opacity="0.15">{</text><text x="20" y="50" font-family="JetBrains Mono, monospace" font-size="11" fill="currentColor" opacity="0.12">data: []</text><text x="20" y="65" font-family="JetBrains Mono, monospace" font-size="11" fill="currentColor" opacity="0.12">ai: true</text><text x="10" y="80" font-family="JetBrains Mono, monospace" font-size="14" fill="currentColor" opacity="0.15">}</text></svg>
+        </div>
+        <!-- Database / nodes -->
+        <div class="floating-el floating-el--5">
+            <svg width="110" height="110" viewBox="0 0 110 110" fill="none"><circle cx="55" cy="30" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.18"/><circle cx="30" cy="80" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.15"/><circle cx="80" cy="80" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.15"/><line x1="55" y1="42" x2="30" y2="70" stroke="currentColor" stroke-width="1" opacity="0.12"/><line x1="55" y1="42" x2="80" y2="70" stroke="currentColor" stroke-width="1" opacity="0.12"/><line x1="40" y1="80" x2="70" y2="80" stroke="currentColor" stroke-width="1" opacity="0.1"/></svg>
+        </div>
+        <!-- Dashboard panel -->
+        <div class="floating-el floating-el--6">
+            <svg width="130" height="80" viewBox="0 0 130 80" fill="none"><rect x="5" y="5" width="120" height="70" rx="10" stroke="currentColor" stroke-width="1.5" opacity="0.15"/><rect x="15" y="15" width="45" height="20" rx="5" fill="currentColor" opacity="0.06"/><rect x="70" y="15" width="45" height="20" rx="5" fill="currentColor" opacity="0.06"/><rect x="15" y="45" width="100" height="4" rx="2" fill="currentColor" opacity="0.1"/><rect x="15" y="55" width="70" height="4" rx="2" fill="currentColor" opacity="0.08"/></svg>
+        </div>
+        <!-- Scatter plot -->
+        <div class="floating-el floating-el--7">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none"><line x1="15" y1="85" x2="15" y2="15" stroke="currentColor" stroke-width="1" opacity="0.12"/><line x1="15" y1="85" x2="90" y2="85" stroke="currentColor" stroke-width="1" opacity="0.12"/><circle cx="30" cy="60" r="4" fill="currentColor" opacity="0.2"/><circle cx="45" cy="45" r="5" fill="currentColor" opacity="0.18"/><circle cx="55" cy="55" r="3" fill="currentColor" opacity="0.15"/><circle cx="70" cy="30" r="5" fill="currentColor" opacity="0.22"/><circle cx="80" cy="40" r="4" fill="currentColor" opacity="0.17"/><circle cx="40" cy="70" r="3" fill="currentColor" opacity="0.13"/></svg>
+        </div>
+        <!-- AWS / cloud icon -->
+        <div class="floating-el floating-el--8">
+            <svg width="100" height="70" viewBox="0 0 100 70" fill="none"><path d="M25 50 C10 50 5 40 10 32 C12 20 25 15 35 20 C40 10 55 5 65 12 C75 5 92 10 90 25 C100 28 100 45 88 48 C90 55 80 58 75 55 L25 55 C20 55 15 52 25 50 Z" stroke="currentColor" stroke-width="1.5" opacity="0.15" fill="currentColor" fill-opacity="0.03"/></svg>
+        </div>
+        <!-- Terminal -->
+        <div class="floating-el floating-el--9">
+            <svg width="110" height="75" viewBox="0 0 110 75" fill="none"><rect x="5" y="5" width="100" height="65" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.15"/><circle cx="18" cy="16" r="3" fill="currentColor" opacity="0.15"/><circle cx="28" cy="16" r="3" fill="currentColor" opacity="0.12"/><circle cx="38" cy="16" r="3" fill="currentColor" opacity="0.1"/><line x1="15" y1="24" x2="95" y2="24" stroke="currentColor" stroke-width="0.5" opacity="0.1"/><text x="15" y="40" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" opacity="0.15">$ deploy --prod</text><text x="15" y="55" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" opacity="0.12">✓ success</text></svg>
+        </div>
+        <!-- API endpoint -->
+        <div class="floating-el floating-el--10">
+            <svg width="95" height="60" viewBox="0 0 95 60" fill="none"><rect x="5" y="5" width="85" height="50" rx="8" stroke="currentColor" stroke-width="1" opacity="0.12"/><text x="15" y="25" font-family="JetBrains Mono, monospace" font-size="8" fill="currentColor" opacity="0.15">GET /api/v1</text><rect x="15" y="32" width="30" height="12" rx="4" fill="currentColor" opacity="0.08"/><text x="20" y="42" font-family="JetBrains Mono, monospace" font-size="7" fill="currentColor" opacity="0.15">200 OK</text></svg>
+        </div>
+    </div>
+
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero" data-animate>
             <!-- Animated background elements -->
             <div class="hero__bg-elements" aria-hidden="true">
+                <!-- Analytics dashboard mockup -->
                 <div class="hero__float hero__float--1">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><rect x="5" y="5" width="50" height="50" rx="8" stroke="currentColor" stroke-width="1" opacity="0.15"/><rect x="12" y="15" width="25" height="3" rx="1.5" fill="currentColor" opacity="0.1"/><rect x="12" y="22" width="35" height="3" rx="1.5" fill="currentColor" opacity="0.08"/><rect x="12" y="29" width="20" height="3" rx="1.5" fill="currentColor" opacity="0.1"/><rect x="12" y="38" width="30" height="12" rx="3" fill="currentColor" opacity="0.05"/></svg>
+                    <svg width="140" height="100" viewBox="0 0 140 100" fill="none">
+                        <rect x="2" y="2" width="136" height="96" rx="10" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
+                        <rect x="12" y="14" width="50" height="6" rx="3" fill="currentColor" opacity="0.25"/>
+                        <rect x="12" y="26" width="35" height="4" rx="2" fill="currentColor" opacity="0.15"/>
+                        <rect x="12" y="40" width="116" height="48" rx="6" fill="currentColor" opacity="0.06"/>
+                        <rect x="20" y="72" width="12" height="10" rx="2" fill="currentColor" opacity="0.3"/>
+                        <rect x="36" y="62" width="12" height="20" rx="2" fill="currentColor" opacity="0.25"/>
+                        <rect x="52" y="52" width="12" height="30" rx="2" fill="currentColor" opacity="0.35"/>
+                        <rect x="68" y="58" width="12" height="24" rx="2" fill="currentColor" opacity="0.2"/>
+                        <rect x="84" y="48" width="12" height="34" rx="2" fill="currentColor" opacity="0.3"/>
+                        <rect x="100" y="44" width="12" height="38" rx="2" fill="currentColor" opacity="0.4"/>
+                    </svg>
                 </div>
+                <!-- Line chart -->
                 <div class="hero__float hero__float--2">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="1" opacity="0.12"/><path d="M15 30 L20 25 L25 28 L30 18 L35 22" stroke="currentColor" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/></svg>
+                    <svg width="120" height="80" viewBox="0 0 120 80" fill="none">
+                        <rect x="2" y="2" width="116" height="76" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                        <path d="M15 55 L30 48 L45 52 L55 35 L70 40 L80 25 L95 30 L105 18" stroke="currentColor" stroke-width="2.5" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 55 L30 48 L45 52 L55 35 L70 40 L80 25 L95 30 L105 18 L105 65 L15 65 Z" fill="currentColor" opacity="0.08"/>
+                        <circle cx="105" cy="18" r="4" fill="currentColor" opacity="0.5"/>
+                        <circle cx="80" cy="25" r="3" fill="currentColor" opacity="0.35"/>
+                    </svg>
                 </div>
+                <!-- Pie chart -->
                 <div class="hero__float hero__float--3">
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none"><rect x="5" y="30" width="6" height="10" rx="2" fill="currentColor" opacity="0.1"/><rect x="14" y="22" width="6" height="18" rx="2" fill="currentColor" opacity="0.12"/><rect x="23" y="15" width="6" height="25" rx="2" fill="currentColor" opacity="0.15"/><rect x="32" y="8" width="6" height="32" rx="2" fill="currentColor" opacity="0.1"/></svg>
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+                        <path d="M50 12 A38 38 0 0 1 85 35 L50 50 Z" fill="currentColor" opacity="0.35"/>
+                        <path d="M85 35 A38 38 0 0 1 70 85 L50 50 Z" fill="currentColor" opacity="0.2"/>
+                        <path d="M70 85 A38 38 0 0 1 20 70 L50 50 Z" fill="currentColor" opacity="0.15"/>
+                        <circle cx="50" cy="50" r="18" fill="var(--bg-primary)" opacity="0.8"/>
+                        <text x="50" y="54" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.5" font-weight="600">87%</text>
+                    </svg>
                 </div>
+                <!-- KPI card -->
                 <div class="hero__float hero__float--4">
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none"><path d="M10 40 Q20 10, 45 15" stroke="currentColor" stroke-width="1.5" opacity="0.12" fill="none" stroke-linecap="round"/><circle cx="45" cy="15" r="3" fill="currentColor" opacity="0.15"/><circle cx="10" cy="40" r="2" fill="currentColor" opacity="0.1"/></svg>
+                    <svg width="130" height="70" viewBox="0 0 130 70" fill="none">
+                        <rect x="2" y="2" width="126" height="66" rx="10" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                        <rect x="14" y="14" width="40" height="5" rx="2.5" fill="currentColor" opacity="0.2"/>
+                        <text x="14" y="38" font-size="18" fill="currentColor" opacity="0.5" font-weight="700" font-family="JetBrains Mono, monospace">2,847</text>
+                        <path d="M14 52 L30 48 L50 50 L70 44 L90 46 L110 38" stroke="currentColor" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+                        <polygon points="102,14 108,14 105,10" fill="currentColor" opacity="0.4"/>
+                        <text x="96" y="24" font-size="8" fill="currentColor" opacity="0.35">+12%</text>
+                    </svg>
                 </div>
+                <!-- Code snippet -->
                 <div class="hero__float hero__float--5">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><polygon points="20,5 35,35 5,35" stroke="currentColor" stroke-width="1" opacity="0.08" fill="none"/><circle cx="20" cy="25" r="5" stroke="currentColor" stroke-width="1" opacity="0.1"/></svg>
+                    <svg width="110" height="80" viewBox="0 0 110 80" fill="none">
+                        <rect x="2" y="2" width="106" height="76" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                        <circle cx="14" cy="12" r="3" fill="#ef4444" opacity="0.5"/>
+                        <circle cx="23" cy="12" r="3" fill="#eab308" opacity="0.5"/>
+                        <circle cx="32" cy="12" r="3" fill="#22c55e" opacity="0.5"/>
+                        <rect x="12" y="24" width="30" height="4" rx="2" fill="currentColor" opacity="0.25"/>
+                        <rect x="20" y="33" width="55" height="4" rx="2" fill="currentColor" opacity="0.2"/>
+                        <rect x="20" y="42" width="40" height="4" rx="2" fill="currentColor" opacity="0.15"/>
+                        <rect x="20" y="51" width="65" height="4" rx="2" fill="currentColor" opacity="0.2"/>
+                        <rect x="12" y="60" width="25" height="4" rx="2" fill="currentColor" opacity="0.25"/>
+                    </svg>
+                </div>
+                <!-- Scatter plot -->
+                <div class="hero__float hero__float--6">
+                    <svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+                        <rect x="2" y="2" width="86" height="86" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+                        <line x1="15" y1="75" x2="75" y2="75" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                        <line x1="15" y1="75" x2="15" y2="15" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                        <circle cx="25" cy="60" r="4" fill="currentColor" opacity="0.4"/>
+                        <circle cx="35" cy="50" r="5" fill="currentColor" opacity="0.35"/>
+                        <circle cx="45" cy="55" r="3" fill="currentColor" opacity="0.3"/>
+                        <circle cx="55" cy="35" r="5" fill="currentColor" opacity="0.45"/>
+                        <circle cx="65" cy="30" r="4" fill="currentColor" opacity="0.4"/>
+                        <circle cx="50" cy="42" r="3" fill="currentColor" opacity="0.25"/>
+                        <circle cx="70" cy="45" r="3" fill="currentColor" opacity="0.3"/>
+                    </svg>
+                </div>
+                <!-- Table/data grid -->
+                <div class="hero__float hero__float--7">
+                    <svg width="120" height="70" viewBox="0 0 120 70" fill="none">
+                        <rect x="2" y="2" width="116" height="66" rx="8" stroke="currentColor" stroke-width="1.5" opacity="0.25"/>
+                        <rect x="8" y="8" width="104" height="12" rx="3" fill="currentColor" opacity="0.1"/>
+                        <rect x="12" y="12" width="20" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+                        <rect x="40" y="12" width="25" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+                        <rect x="75" y="12" width="30" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+                        <rect x="12" y="28" width="18" height="3" rx="1.5" fill="currentColor" opacity="0.15"/>
+                        <rect x="40" y="28" width="22" height="3" rx="1.5" fill="currentColor" opacity="0.15"/>
+                        <rect x="75" y="28" width="15" height="3" rx="1.5" fill="currentColor" opacity="0.15"/>
+                        <rect x="12" y="38" width="22" height="3" rx="1.5" fill="currentColor" opacity="0.12"/>
+                        <rect x="40" y="38" width="18" height="3" rx="1.5" fill="currentColor" opacity="0.12"/>
+                        <rect x="75" y="38" width="28" height="3" rx="1.5" fill="currentColor" opacity="0.12"/>
+                        <rect x="12" y="48" width="15" height="3" rx="1.5" fill="currentColor" opacity="0.1"/>
+                        <rect x="40" y="48" width="25" height="3" rx="1.5" fill="currentColor" opacity="0.1"/>
+                        <rect x="75" y="48" width="20" height="3" rx="1.5" fill="currentColor" opacity="0.1"/>
+                    </svg>
                 </div>
                 <!-- Grid dots background -->
                 <div class="hero__grid-dots"></div>
@@ -84,8 +208,8 @@
                     <span class="hero__title-line">I build things</span>
                     <span class="hero__title-line hero__title-line--gradient">that work.</span>
                 </h1>
-                <p class="hero__subtitle" id="hero-title">Software Developer at <strong>Amazon</strong> · Spain</p>
-                <p class="hero__bio" id="hero-bio">From enterprise analytics platforms with 20+ tabs to production appointment systems handling real bookings daily — I ship full-stack applications that solve real problems.</p>
+                <p class="hero__subtitle" id="hero-title">Business Intelligence Engineer at <strong>Amazon</strong> · Spain</p>
+                <p class="hero__bio" id="hero-bio">From enterprise analytics platforms with 20+ tabs to production appointment systems handling real bookings daily. I ship full stack applications that solve real problems.</p>
                 
                 <!-- Stats row -->
                 <div class="hero__stats">
@@ -118,7 +242,7 @@
             <div class="section-header">
                 <span class="section-header__tag">Portfolio</span>
                 <h2 class="projects__heading">Featured Work</h2>
-                <p class="section-header__desc">A mix of production apps, SaaS platforms, and internal tools — built with Python, TypeScript, React, and AWS.</p>
+                <p class="section-header__desc">Production apps, SaaS platforms, and internal tools built with Python, TypeScript, React, and AWS.</p>
             </div>
             <div class="projects__filters" role="group" aria-label="Filter projects by category">
                 <button class="filter-btn filter-btn--active" data-filter="all" aria-pressed="true">All</button>
@@ -138,10 +262,13 @@
             <div class="about__content">
                 <div class="about__text-block">
                     <p class="about__text">
-                        Software Developer at <strong>Amazon Spain</strong>, focused on building internal tools and full-stack web applications that solve real operational problems at scale. I work across the entire stack — from Python backends with FastAPI and Django to modern frontends with Next.js and TypeScript.
+                        31 years old, originally from Romania, now living in Spain. For the past 10 years I was an entrepreneur: I owned a barbershop, ran a transportation business, and trained barbers. Four years ago I decided to make a complete career switch and dive into technology.
                     </p>
                     <p class="about__text">
-                        Outside of work, I build and ship production-grade personal projects — from restaurant management systems handling real orders to motorcycle community platforms with paid subscriptions. I enjoy clean architecture, data-driven design, and turning ideas into deployed products.
+                        I moved to Spain, opened my own barbershop here, and in parallel started learning to code. What started as curiosity turned into building full automation systems, analytics platforms, and production web applications. Today I work as a Business Intelligence Engineer at <strong>Amazon</strong>, where I build enterprise tools that handle real operational data at scale.
+                    </p>
+                    <p class="about__text">
+                        I'm self taught. Everything you see in this portfolio was built from zero, learning along the way. From a barber chair to building 20+ tab analytics platforms with AI, I bring the same energy to tech that I brought to entrepreneurship: ship fast, solve real problems, keep iterating.
                     </p>
                 </div>
                 <div class="about__skills">
