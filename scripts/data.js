@@ -75,6 +75,36 @@ const projects = [
     restrictedLabel: null
   },
   {
+    id: 'rutillas-app',
+    title: 'Rutillas',
+    subtitle: 'Motorcycle Riders Community',
+    description: 'Social platform for motorcycle riders in Spain. Organize group routes, coordinate via live chat, find rides by location, and share photos. Subscription-based PWA with secure authentication, Turnstile CAPTCHA, and multi-language support.',
+    features: [
+      'Group route organization and discovery',
+      'Live chat for ride coordination',
+      'Location-based route finding',
+      'Photo sharing for rides',
+      'Subscription payments (€3.99/month)',
+      'Turnstile CAPTCHA and rate limiting',
+      'Multi-language support (auto-detect)',
+      'Django backend on Heroku',
+      'GitHub Actions CI/CD'
+    ],
+    techStack: {
+      backend: ['Django', 'Heroku'],
+      frontend: ['React', 'Vite', 'JavaScript'],
+      database: ['PostgreSQL'],
+      deployment: ['GitHub Pages', 'Heroku', 'GitHub Actions']
+    },
+    languages: { JavaScript: 91, CSS: 8, HTML: 1 },
+    category: 'web',
+    isPrivate: false,
+    repoUrl: 'https://github.com/lensordr/rutillas.app',
+    liveUrl: 'https://lensordr.github.io/rutillas.app/',
+    image: null,
+    restrictedLabel: null
+  },
+  {
     id: 'affinity-demo',
     title: 'RelIQ',
     subtitle: 'Relationship Intelligence CRM',
